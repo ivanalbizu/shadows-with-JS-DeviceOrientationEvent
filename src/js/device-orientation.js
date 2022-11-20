@@ -18,8 +18,6 @@ BUTTON.addEventListener('click', START);
 
 const handleOrientation = (e) => {
   const { beta, gamma } = e;
-  console.log('beta--', beta);
-  console.log('gamma--', gamma);
   if (-50 < gamma < 50) DEVICE.style.setProperty('--factor-x', gamma / -30);
   if (-50 < beta < 50) DEVICE.style.setProperty('--factor-y', beta / -30);
 };
